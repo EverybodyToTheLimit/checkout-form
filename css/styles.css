@@ -29,7 +29,7 @@ body, html {
 }
 
 .logo {
-    width: 30%;
+    height: 25%;
     margin-top: 5%;
     padding-left: 35%;
     padding-right: 35%;
@@ -37,7 +37,34 @@ body, html {
 }
 .right-section {
     width: 55%;
-    background-color: rgba(250, 235, 215, 0.596);
+    /* background-color: rgba(250, 235, 215, 0.596); */
+}
+
+.right {
+    height: 33.333333333%;
+    background-color: rgba(250, 235, 215, 0.897);
+}
+div.right.top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+div.right.form-div {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(252, 249, 246, 0.897);
+}
+p {
+    margin: 0;
+    padding: 5px;
+    font-size:2rem
+}
+
+p.header {
+    font-size:3rem;
 }
 
 footer {
@@ -48,4 +75,28 @@ footer {
 
 a {
     color: rgb(230, 210, 185);
+}
+
+.forms {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-between;
+    width: 35%;
+    padding: 5%;
+}
+
+input {
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+}
+
+label, input {
+    display:flex;
+    flex-direction:column;
+}
+
+.form-item {
+    margin-bottom: 25px;
 }
