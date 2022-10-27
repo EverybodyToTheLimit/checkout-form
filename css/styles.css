@@ -1,0 +1,51 @@
+body, html {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(27, 27, 27);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex: 1;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    /* align-items:flex-start; */
+    justify-content: center;
+    background-image: url(../img/checkout-background.jpg);
+    background-size:cover;
+    height: 100%;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    width: 45%;
+    /* background-color: rgba(250, 235, 215, 0.473); */
+}
+
+.logo {
+    width: 40%;
+    margin-top: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: rgba(250, 235, 215, 0.473);
+}
+.right-section {
+    width: 55%;
+    background-color: rgba(250, 235, 215, 0.596);
+}
+
+footer {
+    color: antiquewhite;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+a {
+    color: rgb(230, 210, 185);
+}
