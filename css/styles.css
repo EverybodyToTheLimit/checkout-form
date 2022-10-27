@@ -29,11 +29,11 @@ body, html {
 }
 
 .logo {
-    width: 40%;
-    margin-top: 10%;
-    padding-left: 20%;
-    padding-right: 20%;
-    background-color: rgba(250, 235, 215, 0.473);
+    width: 30%;
+    margin-top: 5%;
+    padding-left: 35%;
+    padding-right: 35%;
+    /* background-color: rgba(250, 235, 215, 0.473); */
 }
 .right-section {
     width: 55%;
