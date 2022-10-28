@@ -23,10 +23,11 @@ body, html {
     display: flex;
     flex-direction: row;
     /* align-items:flex-start; */
-    justify-content: center;
+    justify-content: flex-start;
     background-image: url(../img/checkout-background.jpg);
     background-size:cover;
     height: 100%;
+    background-color: rgba(250, 235, 215, 0.897);
 }
 
 .left-section {
@@ -34,32 +35,31 @@ body, html {
     flex-direction: column;
     justify-content:space-between;
     align-items: center;
-    width: 45%;
+    width: 30%;
     /* background-color: rgba(250, 235, 215, 0.473); */
+}
+
+form#submission-form {
+    width: 50%;
 }
 
 .logo {
     height: 25%;
+    width: 80%;
     margin-top: 5%;
-    padding-left: 35%;
-    padding-right: 35%;
     /* background-color: rgba(250, 235, 215, 0.473); */
 }
 .right-section {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     height: 100%;
-    width: 55%;
-}
-
-.right {
-    /* height: 33.333333333%; */
+    width: 100%;
     background-color: rgba(250, 235, 215, 0.897);
 }
+
 div.right.top {
-    padding-top: 20%;
     padding-bottom: 2%;
-    height:25%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -73,20 +73,22 @@ div.right.form-div {
     background-color: rgba(252, 249, 246, 0.897);
 }
 div.right.bottom {
+    display: flex;
     flex-direction: column;
     align-items: stretch; 
     justify-content: stretch;
-    height: 100%;
 }
-p {
+p{
     margin-top: 5px;
     padding: 5px;
-    font-size: 20px;
+    font-size: 2.5vh;
 }
 
 p.header {
-    font-size: 30px;
+    font-size: 4vw;
     margin-bottom: 20px;
+    margin-top: 50px;
+    font-weight: bold;
 }
 
 footer {
@@ -103,11 +105,12 @@ a {
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    max-width: 500px;
+    max-width: 550px;
     align-content: stretch;
     justify-content: space-between;
     padding: 2%;
 }
+
 
 input {
     background-color: #FFFFFF;
@@ -129,3 +132,56 @@ label, input {
 .form-item {
     margin-bottom: 25px;
 }
+
+button {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 150px;
+    height: 40px;
+    background-color: #363535;
+    border: 1px solid #D6D9DC;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+h1, h2, p {
+    padding-left: 20px;
+}
+
+:focus {
+    background-color: #fff;
+}
+
+input:focus:invalid {
+    border: 1px solid #b92326;
+    background-color: rgba(185, 35, 38, 0.25);
+}
+
+
+input {
+    border: 2px solid;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin: 0.25rem;
+    min-width: 125px;
+    padding: 0.5rem;
+    transition: border-color 0.5s ease-out;
+  }
+  input:optional {
+    border-color: gray;
+  }
+  input:required:valid {
+    border-color: green;
+  }
+  /* input:invalid {
+    border-color: red;
+  } */
+  input:required:focus:valid {
+    background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95% 50% lightgreen;
+    background-size: 25px;
+  }
+  input:focus:invalid {
+    background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% lightsalmon;
+    background-size: 25px;
+  }
+  

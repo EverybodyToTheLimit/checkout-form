@@ -16,46 +16,48 @@
                 Photo by <a href="https://unsplash.com/@imattsmart?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">iMattSmart</a> on <a href="https://unsplash.com/s/photos/tools?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
             </footer>
         </div>
+        <form action="" id="submission-form">
         <div class="right-section">
-            <form action="" id="submission-form">
+            
                 <div class="right top">
-                    <p class="header">Welcome to Tool Swap!<br>Looking forward to having you onboard<br></p>
-                    <p>To create an account you'll need to fill in a few details below</p>
+                    <h1 class="header">Welcome to Tool Swap!</h1>
+                    <h2>To create an account you'll need to fill in a few details below</h2>
                 </div>
                 <div class="right form-div">
-                    <p>Let's do this</p>
+                    <p><strong>Let's do this</strong></p>
                     <div class="forms">
                             <div class="form-item">
                                 <label for="first-name">First Name</label>
-                                <input type="text" name="first-name" id="first-name">
+                                <input type="text" name="first-name" id="first-name" required placeholder='Name *' maxlength="245" >
                             </div>
                             <div class="form-item">
                                 <label for="last-name">Last Name</label>
-                                <input type="text" name="last-name" id="last-name">
+                                <input type="text" name="last-name" id="last-name" required placeholder='Surname *' maxlength="245" >
                             </div>
                             <div class="form-item">
                                 <label for="email">Email</label>
-                                <input type="text" name="email" id="email" placeholder='joe@example.com'>
+                                <input type="email" name="email" id="email" required placeholder='joe@example.com *' value="">
                             </div>
                             <div class="form-item">
                                 <label for="phoneno">Phone number</label>
-                                <input type="tel" name="phoneno" id="phoneno">
+                                <input type="tel" name="phoneno" id="phoneno" placeholder="Numbers only please" pattern="^[0-9]*$">
                             </div>
                             <div class="form-item">
                                 <label for="pwd">Password</label>
-                                <input type="password" name="pwd" id="pwd">
+                                <input type="password" name="pwd" id="pwd" placeholder="upper, lowercase and number" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
                             </div>
                             <div class="form-item">
                                 <label for="pwd-repeat">Repeat password</label>
-                                <input type="password" name="pwd-repeat" id="pwd-repeat">
+                                <input type="password" name="pwd-repeat" id="pwd-repeat" placeholder="upper, lowercase and number" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
                             </div>
                     
                     </div>
                 </div>
-                <div class="right bottom">
-                    <button type="submit" name="btn" id="btn">Submit</button>
-                </div>
-            </form>
+            
+            <div class="right bottom">
+                <button type="submit" name="btn" id="btn">Submit</button>
+            </div>
+        </form>
          </div>
 </body>
 </html>
