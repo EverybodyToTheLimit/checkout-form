@@ -13,11 +13,18 @@ function validatePwd() {
 
 }
 
+function changeDefault() {
+    let label = document.getElementById("pwd-repeat-label");
+    label.innerHTML = "Repeat password"
+    label.style.color = "black"
+}
+
 let btn = document.getElementById("btn");
 btn.addEventListener("click",() => {
     
     if (validatePwd() == true) {
         document.getElementById("submission-form").submit()
+        window.location.replace("welcome.html");
     }
 
 

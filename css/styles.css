@@ -19,7 +19,7 @@ body, html {
     line-height: 1.3;
 }
 
-.container {
+.container, .container-welcome {
     display: flex;
     flex-direction: row;
     /* align-items:flex-start; */
@@ -28,6 +28,13 @@ body, html {
     background-size:cover;
     height: 100%;
     background-color: rgba(250, 235, 215, 0.897);
+}
+
+.container-welcome {
+    flex-direction:column;
+    align-items: center;
+    gap: 30px;
+    color: black;
 }
 
 .left-section {
@@ -183,5 +190,11 @@ input {
   input:focus:invalid {
     background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% lightsalmon;
     background-size: 25px;
+  }
+
+  input#pwd-repeat:focus + label {
+    content: "Repeat password";
+    color: black;
+
   }
   
