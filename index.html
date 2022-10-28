@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <script src="./script/checkout.js"></script>
 </head>
 <body>
     <div class="container">
@@ -16,7 +15,7 @@
                 Photo by <a href="https://unsplash.com/@imattsmart?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">iMattSmart</a> on <a href="https://unsplash.com/s/photos/tools?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
             </footer>
         </div>
-        <form action="" id="submission-form">
+        <form action="#" id="submission-form">
         <div class="right-section">
             
                 <div class="right top">
@@ -47,7 +46,7 @@
                                 <input type="password" name="pwd" id="pwd" placeholder="upper, lowercase and number" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
                             </div>
                             <div class="form-item">
-                                <label for="pwd-repeat">Repeat password</label>
+                                <label id="pwd-repeat-label" for="pwd-repeat">Repeat password</label>
                                 <input type="password" name="pwd-repeat" id="pwd-repeat" placeholder="upper, lowercase and number" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
                             </div>
                     
@@ -55,9 +54,10 @@
                 </div>
             
             <div class="right bottom">
-                <button type="submit" name="btn" id="btn">Submit</button>
+                <button type="button" name="btn" id="btn">Submit</button>
             </div>
         </form>
          </div>
 </body>
+<script src="./script/checkout.js"></script>
 </html>
