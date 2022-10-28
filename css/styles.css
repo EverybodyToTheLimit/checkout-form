@@ -52,9 +52,9 @@ form#submission-form {
 
 .logo {
     height: 25%;
-    width: 100%;
+    width: auto;
     margin-top: 5%;
-    background-color: rgba(250, 235, 215, 0.473);
+    /* background-color: rgba(250, 235, 215, 0.473); */
 }
 .right-section {
     display: flex;
